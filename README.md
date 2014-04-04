@@ -4,7 +4,7 @@ skeleton-project
 A skeleton project for starting to build XMPP projects using XMPP-FTW
 
 
-setup:
+setup
 ------
 once checked out run:
 
@@ -19,6 +19,8 @@ once checked out run:
 Then visit [http://localhost:3000](http://localhost:3000)
 
 How it works
+------
+
 
 ```
   +---------+  HTML/IMG/JS/CSS  +----------+
