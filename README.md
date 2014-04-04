@@ -17,3 +17,28 @@ once checked out run:
 ...which will start a server on port 3000
 
 Then visit [http://localhost:3000](http://localhost:3000)
+
+How it works
+
+```
+  +---------+  HTML/IMG/JS/CSS  +----------+
+  | User /  | <---------------+ | xmpp-ftw |
+  | Browser |      websocket    | server   |
+  +---------+ <---------------> +----------+
+                                    ^
+                                    | socket
+                                    |
+                                    v
+                                +--------+   component   +------------+
+                                |  XMPP  |   connection  | buddycloud |
+                                | server |<------------->| component  |
+                                +--------+               +------------+
+                                   + ^
+                                   | |
+                                   v +
+                               +----------+
+                               | External |
+                               |   XMPP   |
+                               |  server  |
+                               +----------+
+```
